@@ -1,0 +1,9 @@
+# Site-specific ignores
+# Keep assets committed, ignore generated artifacts if you add a build/minification step.
+
+# Minified outputs (optional)
+css/*.min.css
+js/*.min.js
+
+# Source maps (optional)
+*.map

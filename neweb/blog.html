@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1F3A7D" />
+  <meta name="robots" content="index,follow" />
+
+  <title>Blog | NEWEB Digital Solutions</title>
+  <meta name="description" content="Read NEWEB Digital Solutions articles on SEO tips, web development trends, website security, and performance best practices." />
+  <meta name="keywords" content="SEO tips, web development trends, website security, Core Web Vitals, NEWEB blog" />
+  <link rel="canonical" href="https://newebdigitalsolutions.com/blog.html" />
+
+  <meta property="og:title" content="Blog | NEWEB Digital Solutions" />
+  <meta property="og:description" content="SEO tips, web development trends, and security best practices." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://newebdigitalsolutions.com/blog.html" />
+  <meta property="og:image" content="https://newebdigitalsolutions.com/assets/images/placeholder.svg" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://newebdigitalsolutions.com/#organization",
+          "name": "NEWEB Digital Solutions",
+          "url": "https://newebdigitalsolutions.com/",
+          "logo": "https://newebdigitalsolutions.com/assets/images/placeholder.svg"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://newebdigitalsolutions.com/#website",
+          "url": "https://newebdigitalsolutions.com/",
+          "name": "NEWEB Digital Solutions",
+          "publisher": {"@id": "https://newebdigitalsolutions.com/#organization"}
+        },
+        {
+          "@type": "Blog",
+          "@id": "https://newebdigitalsolutions.com/blog.html#blog",
+          "name": "NEWEB Blog",
+          "url": "https://newebdigitalsolutions.com/blog.html",
+          "isPartOf": {"@id": "https://newebdigitalsolutions.com/#website"},
+          "publisher": {"@id": "https://newebdigitalsolutions.com/#organization"}
+        }
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="NEWEB Digital Solutions home">
+        <span class="logo-mark" aria-hidden="true">NEWEB</span>
+        <span>Digital Solutions</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary" id="primary-navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">
+          <span class="sr-only">Toggle dark mode</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Z" stroke="currentColor" stroke-width="2" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" data-blog>
+    <section class="hero" aria-label="Blog intro">
+      <div class="container hero-grid">
+        <div data-animate>
+          <div class="kicker"><span class="kicker-dot" aria-hidden="true"></span><span class="badge">Blog</span></div>
+          <h1>Practical insights on SEO, development, and security</h1>
+          <p class="lead mt-14">Articles designed for business owners and teams who want clearer decisions and better outcomes.</p>
+          <div class="hero-actions" role="group" aria-label="Blog CTAs">
+            <a class="btn btn--primary" href="contact.html">Ask a question</a>
+            <a class="btn btn--secondary" href="services.html">Our services</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" data-animate aria-label="Blog search">
+          <h2 class="m0">Search & filter</h2>
+          <form class="form mt-14" role="search" aria-label="Search blog posts">
+            <div class="field">
+              <label class="label" for="blog-search">Search</label>
+              <input class="input" id="blog-search" type="search" placeholder="Search articles…" data-blog-search />
+            </div>
+            <div class="field">
+              <label class="label" for="blog-category">Category</label>
+              <select class="select" id="blog-category" data-blog-category>
+                <option value="all">All</option>
+                <option value="seo">SEO</option>
+                <option value="development">Web Development</option>
+                <option value="security">Security</option>
+              </select>
+            </div>
+            <p class="helper">Tip: your query can also be passed via <code>?q=</code> in the URL.</p>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="posts-title">
+      <div class="container">
+        <header class="section__header" data-animate>
+          <span class="section__eyebrow">Articles</span>
+          <h2 id="posts-title">Latest posts</h2>
+          <p>Each post includes clear steps you can apply immediately.</p>
+        </header>
+
+        <div class="content-layout" data-animate>
+          <div class="grid" style="gap:16px;">
+            <article class="card" id="post-seo-audit" data-post data-title="SEO Audit Checklist for Small Business Websites" data-excerpt="A simple SEO audit you can run in under an hour: metadata, headings, internal links, and technical basics." data-category="seo">
+              <div class="project-thumb"><img src="assets/images/placeholder.svg" alt="SEO audit article featured image" loading="lazy" /></div>
+              <h3 class="card__title mt-14">SEO Audit Checklist for Small Business Websites</h3>
+              <p class="helper">2026-01-01 · SEO</p>
+              <p class="mt-10">A simple SEO audit you can run in under an hour: metadata, headings, internal links, and technical basics.</p>
+              <div class="card__cta"><a class="btn btn--secondary" href="#post-seo-audit">Read more</a></div>
+              <details class="mt-14" data-post-details>
+                <summary class="badge">Full article</summary>
+                <div class="mt-14">
+                  <p><strong>1) Metadata:</strong> unique title + description for each page. Make sure your main keyword appears naturally.</p>
+                  <p><strong>2) Headings:</strong> one clear <code>h1</code>, followed by structured <code>h2</code>/<code>h3</code> sections.</p>
+                  <p><strong>3) Internal links:</strong> link service pages to case studies and FAQs; use descriptive anchor text.</p>
+                  <p><strong>4) Technical basics:</strong> sitemap, robots, canonical tags, and fast load times (Core Web Vitals).</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="card" id="post-core-web-vitals" data-post data-title="Core Web Vitals: What to Fix First" data-excerpt="The fastest wins usually come from image optimization, reducing unused CSS/JS, and better caching." data-category="development">
+              <div class="project-thumb"><img src="assets/images/placeholder.svg" alt="Core Web Vitals article featured image" loading="lazy" /></div>
+              <h3 class="card__title mt-14">Core Web Vitals: What to Fix First</h3>
+              <p class="helper">2025-12-18 · Web Development</p>
+              <p class="mt-10">The fastest wins usually come from image optimization, reducing unused CSS/JS, and better caching.</p>
+              <div class="card__cta"><a class="btn btn--secondary" href="#post-core-web-vitals">Read more</a></div>
+              <details class="mt-14" data-post-details>
+                <summary class="badge">Full article</summary>
+                <div class="mt-14">
+                  <p><strong>LCP:</strong> optimize hero images and reduce render-blocking resources.</p>
+                  <p><strong>INP:</strong> keep JavaScript lightweight; avoid heavy event handlers and large DOM updates.</p>
+                  <p><strong>CLS:</strong> set explicit image dimensions and reserve layout space for dynamic elements.</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="card" id="post-dev-trends" data-post data-title="Web Development Trends to Watch" data-excerpt="From performance budgets to accessibility-first design, these trends keep sites fast and inclusive." data-category="development">
+              <div class="project-thumb"><img src="assets/images/placeholder.svg" alt="Web development trends article featured image" loading="lazy" /></div>
+              <h3 class="card__title mt-14">Web Development Trends to Watch</h3>
+              <p class="helper">2025-12-02 · Web Development</p>
+              <p class="mt-10">From performance budgets to accessibility-first design, these trends keep sites fast and inclusive.</p>
+              <div class="card__cta"><a class="btn btn--secondary" href="#post-dev-trends">Read more</a></div>
+              <details class="mt-14" data-post-details>
+                <summary class="badge">Full article</summary>
+                <div class="mt-14">
+                  <p><strong>Accessibility:</strong> build for keyboard and screen readers from day one.</p>
+                  <p><strong>Performance budgets:</strong> set targets for JS/CSS size, image weight, and LCP.</p>
+                  <p><strong>Content structure:</strong> improve SEO and UX by designing pages around questions and intent.</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="card" id="post-security-basics" data-post data-title="Website Security Basics: Updates, Backups, and Monitoring" data-excerpt="Security is a process: keep software updated, maintain backups, and monitor uptime and suspicious activity." data-category="security">
+              <div class="project-thumb"><img src="assets/images/placeholder.svg" alt="Website security article featured image" loading="lazy" /></div>
+              <h3 class="card__title mt-14">Website Security Basics: Updates, Backups, and Monitoring</h3>
+              <p class="helper">2025-11-18 · Security</p>
+              <p class="mt-10">Security is a process: keep software updated, maintain backups, and monitor uptime and suspicious activity.</p>
+              <div class="card__cta"><a class="btn btn--secondary" href="#post-security-basics">Read more</a></div>
+              <details class="mt-14" data-post-details>
+                <summary class="badge">Full article</summary>
+                <div class="mt-14">
+                  <p><strong>Updates:</strong> patch quickly and test changes safely.</p>
+                  <p><strong>Backups:</strong> verify restore procedures (don’t assume backups work).</p>
+                  <p><strong>Monitoring:</strong> watch uptime, SSL expiry, and login anomalies.</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="card" id="post-seo-content" data-post data-title="Content Optimization: A Practical On-Page SEO Workflow" data-excerpt="A repeatable workflow to improve headings, internal links, and content clarity—without keyword stuffing." data-category="seo">
+              <div class="project-thumb"><img src="assets/images/placeholder.svg" alt="Content optimization article featured image" loading="lazy" /></div>
+              <h3 class="card__title mt-14">Content Optimization: A Practical On-Page SEO Workflow</h3>
+              <p class="helper">2025-11-01 · SEO</p>
+              <p class="mt-10">A repeatable workflow to improve headings, internal links, and content clarity—without keyword stuffing.</p>
+              <div class="card__cta"><a class="btn btn--secondary" href="#post-seo-content">Read more</a></div>
+              <details class="mt-14" data-post-details>
+                <summary class="badge">Full article</summary>
+                <div class="mt-14">
+                  <p><strong>1) Clarify intent:</strong> define the reader’s question and goal.</p>
+                  <p><strong>2) Structure:</strong> use scannable sections with descriptive headings.</p>
+                  <p><strong>3) Internal links:</strong> connect service pages, FAQs, and portfolio items.</p>
+                  <p><strong>4) Measure:</strong> track impressions, clicks, and conversions in analytics.</p>
+                </div>
+              </details>
+            </article>
+
+            <div class="notice" data-empty-state hidden>
+              <strong>No results.</strong> Try a different keyword or choose “All” categories.
+            </div>
+          </div>
+
+          <aside class="card blog-sidebar" aria-label="Recent posts">
+            <h3 class="card__title">Recent posts</h3>
+            <ul class="footer-links" style="margin-top: 10px;">
+              <li><a href="#post-seo-audit">SEO Audit Checklist</a></li>
+              <li><a href="#post-core-web-vitals">Core Web Vitals</a></li>
+              <li><a href="#post-dev-trends">Web Development Trends</a></li>
+              <li><a href="#post-security-basics">Website Security Basics</a></li>
+              <li><a href="#post-seo-content">Content Optimization Workflow</a></li>
+            </ul>
+            <div class="mt-18">
+              <a class="btn btn--primary btn--block" href="contact.html">Get help improving your site</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid" data-animate>
+        <div class="footer-col">
+          <a class="logo" href="index.html">
+            <span class="logo-mark" aria-hidden="true">NEWEB</span>
+            <span>Digital Solutions</span>
+          </a>
+          <p class="mt-14">Want a hands-on audit? NEWEB can help you build a plan and execute it.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#website-development">Website Development</a></li>
+            <li><a href="services.html#web-management">Web Management</a></li>
+            <li><a href="services.html#seo-services">SEO Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <ul class="footer-links">
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@newebdigitalsolutions.com">hello@newebdigitalsolutions.com</a></li>
+            <li><a href="tel:+620000000000">+62 000 0000 0000</a></li>
+            <li><a href="contact.html">Request a quote</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year></span> NEWEB Digital Solutions. All rights reserved.</span>
+        <span>Built for speed, accessibility, and SEO.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
